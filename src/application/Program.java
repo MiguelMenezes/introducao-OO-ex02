@@ -22,7 +22,7 @@ public class Program {
 		System.out.print("Quantidade em estoque: ");
 		p.setQuantidade(scan.nextInt());
 
-		System.out.println(p.getNome() + " , R$" + p.getPreco() + " , " + p.getQuantidade());
+		System.out.println(p);
 
 		scan.close();
 

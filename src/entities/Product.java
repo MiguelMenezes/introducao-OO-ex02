@@ -42,4 +42,17 @@ public class Product {
 		this.quantidade -= quantidade;
 	}
 
+	@Override
+	public String toString() {
+
+		return "[DADOS DO PRODUTO]: \n"
+				+ nome
+				+", R$ " 
+				+preco
+				+", "
+				+quantidade
+				+" unidades. TOTAL: R$"
+				+valorTotalEstoque();
+	}
+
 }
