@@ -23,6 +23,19 @@ public class Program {
 		p.setQuantidade(scan.nextInt());
 
 		System.out.println(p);
+		System.out.println();
+
+		System.out.println("Digite a quantidade a ser adicionada ao estoque: ");
+		int qtde = scan.nextInt();
+		p.adicionarProdutos(qtde);
+		System.out.println("DADOS ATUALIZADOS COM SUCESSO!");
+		System.out.println(p);
+
+		System.out.println("Digite a quantidade a ser removida do estoque: ");
+		qtde = scan.nextInt();
+		p.removerProdutos(qtde);
+		System.out.println("DADOS ATUALIZADOS COM SUCESSO!");
+		System.out.println(p);
 
 		scan.close();
 

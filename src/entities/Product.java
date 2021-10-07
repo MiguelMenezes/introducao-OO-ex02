@@ -48,11 +48,11 @@ public class Product {
 		return "[DADOS DO PRODUTO]: \n"
 				+ nome
 				+", R$ " 
-				+preco
+				+String.format("%.2f", preco)
 				+", "
 				+quantidade
 				+" unidades. TOTAL: R$"
-				+valorTotalEstoque();
+				+String.format("%.2f", valorTotalEstoque());
 	}
 
 }
